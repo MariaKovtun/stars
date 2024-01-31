@@ -13,16 +13,14 @@ const Star = () => {
 }
 
 function Stars(data: StarsProps) {
-    
-    
-    
-    return (
+    return (data.count > 0 && data.count <= 5) ? 
+    (
         <ul className="card-body-stars u-clearfix">
             <li>
             {Array(data.count).fill(<Star/>)}
             </li>      
         </ul>
-        )
+    ) : null
 }
 
 export default Stars

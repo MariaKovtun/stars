@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-     <Stars count={5}></Stars> 
+     <Stars count={0}></Stars> 
     </>
   )
 }
